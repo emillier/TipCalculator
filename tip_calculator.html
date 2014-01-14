@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>
+    Just the Tip!
+    </title>
+    
+  </head>
+<body>
+
+<!--
+
+HTML feedback (I know this isnt asked for but might be valuable)
+
+Using tabs *and* spaces = bad (best practices). I'll show you how to 'show invisible' characters in sublime so you can see them and know it's happening. Also I'll show you something called editorconfig / how to configure sublime DONE
+
+Indents aren't 2 spaces (our styleguide) DONE
+
+If you use the same value for the input names and ids it makes things easier to remember DONE
+
+You sometimes have spaces after the word 'class' which should be removed (invalid html otherwise) DONE
+
+Your H1 has an H2 closing tag (invalid html) DONE
+
+You don't need to have the / in the BR tags. This is XHTML and pretty much a forgotten about syntax. If you do want to use this syntax, the / should be after the BR characters, e.g. <br/> This is because we're opening and closing the tag at the same time DONE
+
+You forgot to close your .main-background div
+
+-->
+
+
+    <h1>Tip Calculator</h1>
+
+        <div class="main-background"> 
+         <h2>Bill Total</h2>
+
+         <input type="text" name="bill-total" id="bill-total"><br>
+
+    <h2>Tip Percentage</h2> 
+          <input type="text" name="tip-percentage" id="tip-percentage"><br>
+
+
+          <input type="submit" value="Submit" id="submit-button"/>
+        </div>
+
+        <div id="separator">
+        </div>
+
+        <div class="main-background">
+
+            <h2>Tip</h2>
+
+         <div id="tip-result" class="result is-hidden">
+        </div>
+
+        <h2>Total</h2>
+
+         <div id="total-result" class="result is-hidden">
+        </div>
+       </div>
+
+<script src="tipcalculator.js"></script>
+</body>
+</html>
