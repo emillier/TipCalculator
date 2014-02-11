@@ -3,6 +3,8 @@
   Feedback:
 
   Make it so you can hit return to submit? Key up event
+  Make it so the code doesn't run when you enter letters into inputs
+  Anonymous function - bad, save with a name ubmitButton.addEventListener( 'click', function() {
 
 */
 
